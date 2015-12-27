@@ -1,0 +1,43 @@
+//styles for Metal Rating website
+//@rdarling42
+
+$black : #000000;
+$white : #ffffff;
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: $black;
+    color: $white;
+}
+
+h1, h2, h3, h4, h5, p, li {
+    color: $white;
+}
+
+li {
+    list-style: none;
+}
+
+.row {
+    max-width: 1080px;
+}
+
+.genre {
+    margin-bottom: 4rem;
+}
+
+.myrate {
+    display: none;
+
+    select {
+        max-width: 33%; 
+    }
+
+    button {
+        position: relative; 
+        top: -0.2rem;
+    }
+}
