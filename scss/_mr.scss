@@ -11,11 +11,29 @@ html {
 body {
     background: $black;
     color: $white;
+    font-size: 1.6rem;
+
+    p, li {
+        font-size: 1.6rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem; 
+    }
+
+    h3 {
+        font-size: 2rem; 
+    }
 }
 
 h1, h2, h3, h4, h5, p, li {
     color: $white;
 }
+
 
 li {
     list-style: none;
@@ -40,4 +58,8 @@ li {
         position: relative; 
         top: -0.2rem;
     }
+}
+
+.button.tiny {
+    font-size: 1rem;
 }

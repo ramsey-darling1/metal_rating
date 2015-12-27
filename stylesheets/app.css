@@ -9448,38 +9448,60 @@ html {
 body {
   background: #000000;
   color: #ffffff;
+  font-size: 1.6rem;
+}
+/* line 16, ../scss/_mr.scss */
+body p, body li {
+  font-size: 1.6rem;
+}
+/* line 20, ../scss/_mr.scss */
+body h1 {
+  font-size: 4rem;
+}
+/* line 24, ../scss/_mr.scss */
+body h2 {
+  font-size: 3rem;
+}
+/* line 28, ../scss/_mr.scss */
+body h3 {
+  font-size: 2rem;
 }
 
-/* line 16, ../scss/_mr.scss */
+/* line 33, ../scss/_mr.scss */
 h1, h2, h3, h4, h5, p, li {
   color: #ffffff;
 }
 
-/* line 20, ../scss/_mr.scss */
+/* line 38, ../scss/_mr.scss */
 li {
   list-style: none;
 }
 
-/* line 24, ../scss/_mr.scss */
+/* line 42, ../scss/_mr.scss */
 .row {
   max-width: 1080px;
 }
 
-/* line 28, ../scss/_mr.scss */
+/* line 46, ../scss/_mr.scss */
 .genre {
   margin-bottom: 4rem;
 }
 
-/* line 32, ../scss/_mr.scss */
+/* line 50, ../scss/_mr.scss */
 .myrate {
   display: none;
 }
-/* line 35, ../scss/_mr.scss */
+/* line 53, ../scss/_mr.scss */
 .myrate select {
   max-width: 33%;
 }
-/* line 39, ../scss/_mr.scss */
+/* line 57, ../scss/_mr.scss */
 .myrate button {
   position: relative;
   top: -0.2rem;
+}
+
+/* line 63, ../scss/_mr.scss */
+.button.tiny {
+  font-size: 1rem;
 }

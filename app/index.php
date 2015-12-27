@@ -8,7 +8,7 @@ include_once 'band.php';
 
 if(!empty($_POST)){
     //handle post requests
-    if(!empty($_POST['action']) && !empty($_POST['safety'])){
+    if(!empty($_POST['action'])){
         //right now, there is nothing we are doing except updating a bands ratings
         switch($_POST['action']){
         case 'rate':
@@ -16,7 +16,7 @@ if(!empty($_POST)){
                 $band = new Band($_POST['band']);
                 if($band->add_rating($_POST['rating'])){
                     $band->update_band();
-                    $res = 'Thanks, rating was updating successfully'; 
+                    $res = 'Thanks, rating was updated successfully'; 
                 }else{
                     $res = 'Sorry, we were not able to update that band rating at this time'; 
                 }
@@ -36,7 +36,7 @@ if(!empty($_POST)){
         switch($_GET['action']){
             case 'bands': 
                 $band = new Band(null);
-                $res = $band->grab_all_bands();
+                $res = json_encode($band->grab_all_bands());
                 break;
             default:
                 $res = 'Sorry, action not understood';
