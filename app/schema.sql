@@ -5,7 +5,7 @@ create table bands (
 );
 
 create table band_rates (
-    band varchar (150) key,
+    band varchar (150),
     rate int (1) unsigned,
     date int (10) unsigned
 );
